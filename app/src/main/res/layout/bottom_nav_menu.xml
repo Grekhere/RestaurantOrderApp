@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_dishes">
+
+    <fragment
+        android:id="@+id/navigation_dishes"
+        android:name="com.example.restaurantorderapp.view.DishesFragment"
+        android:label="Dishes"
+        tools:layout="@layout/fragment_dishes" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.restaurantorderapp.view.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_order_history"
+        android:name="com.example.restaurantorderapp.view.OrderHistoryFragment"
+        android:label="Order History"
+        tools:layout="@layout/fragment_order_history" />
+</navigation>
